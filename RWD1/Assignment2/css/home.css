@@ -1,0 +1,182 @@
+/* Coded by Andrei Ghiriti */
+.bg {
+    background-image:url("images/bg.jpg");
+    background-color:black;
+}
+    
+.main, .side-panel {
+    position: relative;
+    height: 100%;
+}
+
+.main {
+    background-color: red;
+}
+
+.side-panel {
+    background-color: teal;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.more-info {
+    text-align: center;
+}
+
+.highlight {
+    color: violet;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+    font-weight: 500;
+}
+
+a.cta,button.cta{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: #007FFF;
+    display: inline-block;
+    box-shadow:0 0 0 10px rgba(0,127,255,.15);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+
+.vertical {
+    margin-top: 2%;
+    height: auto;
+    border-left: 5px solid black;
+    position: absolute;
+    left: 65%;
+}
+
+body {
+  animation: 10000ms ease-in-out infinite color-change;
+}
+  
+@keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  20% {
+    background-color: gold;
+  }
+  40% {
+    background-color: indianred;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: teal;
+  }
+}
+
+h2{
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 1rem skyblue;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 0.5 px;
+    outline-offset: 0.5px;
+}
+  
+.newspaper
+{
+    width: 50%;
+    height: 30%; 
+    margin-top: 2%;
+    margin-left:1% ;
+    margin-bottom: 2%; 
+    border:3px solid black;
+    display: inline-block;
+    outline:1rem solid grey;
+}
+
+.award {
+    width:30%;
+    display: inline-block;
+    float:right;
+    margin-top: 0;
+    margin-right: 2%;
+    border: 3px solid black;
+}
+
+.awardp {
+    margin-left:70%;
+    font-size:25px ;
+    border: 3px solid black;
+    width:28%;
+    margin-top:0%;
+}
+
+.cup {
+    width:27%;
+    display: inline-block;
+    margin-top: 0%;
+    float: right;
+    margin-right: 2%;
+}
+
+.brdr {
+    transform: translateY(-60%);
+    border:3px solid black;
+    margin-left: 2%;
+    width:60%;
+    outline: 0.5rem solid khaki;
+}
+
+h2 {
+    font-size:35px ;
+     border:3px solid black; 
+     width:18%;
+     margin-left: 10px;
+     font-family: 'Courier New', monospace;
+}
+
+.ufo {
+    width:20%;
+    height:10%; 
+}
+
+.ufop {
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.li2 {
+    margin-top:4px ;
+}
+
+.man {
+    width:20%;
+    height:10% ;
+}
+
+.manp {
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btndiv {
+    transform: translateY(-400%);
+    margin-top: 2%;
+    margin-left:2% ;
+}
+
+.blk {
+    position: initial !important;
+}

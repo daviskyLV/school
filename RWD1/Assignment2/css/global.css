@@ -1,0 +1,112 @@
+/* Coded by everyone from the group (Mikkel Hansen, Andrei Ghiriti, Andrejs Umbrovskis, Darius Piros)*/
+* {
+    box-sizing: border-box;
+    font-family: "Verdana", "Arial";
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#topbar {
+    background-color: grey;
+    width: 100%;
+    position: sticky;
+	top: 0;
+    z-index: 1000;
+}
+
+img.via-nav-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-button {
+    box-shadow: 0px 14px 12px -5px #000000;
+	background:linear-gradient(to bottom, #1f2426 5%, grey 100%);
+	background-color:#1f2426;
+	border-radius:12px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px;
+	text-shadow:0px 1px 0px #2b8bab;
+    margin-right:100px;
+	position: relative;
+
+}
+
+.nav-button.selected {
+	background:linear-gradient(to bottom, rgb(255, 231, 15) 10%, #040503 100%);
+	background-color:green;
+}
+
+.nav-button:hover {
+	color:yellow;
+}
+
+#topbar table {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-bottom: 5px black solid;
+    background-color: #4A4A4A;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+#topbar table td, #topbar table th {
+    border: 0px solid hotpink;
+    padding: 2px 2px;
+}
+
+#topbar table td {
+    font-size: 20px;
+    color: #E6E6E6;
+}
+
+#topbar table tr:nth-child(even) {
+    background: #888888;
+}
+
+.icons{
+    padding-top: 20px;
+}
+#test{
+    background-color: hotpink;
+}
+
+/* bottom bar */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-spotify {
+    color: white;
+}
+.blk{
+   bottom:0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    position:fixed;
+    text-align: center !important;
+}
+
+

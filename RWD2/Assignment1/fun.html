@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actually functioning Tic Tac Toe!</title>
+    <style>
+        button {font-size: medium;}
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td, button {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0);
+            font-size: xx-large;
+        }
+        #reset {
+            width: 190px;
+            height: 40px;
+            background: rgb(255, 18, 18);
+            font-size: medium;
+            color: azure;
+        }
+        #title {
+            font-size: xx-large;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="title">Player <b id="playerTurn">X</b>'s turn!</p>
+    <table>
+        <tbody>
+            <tr>
+                <td><button id="r0c0" onclick="placeTile(0, 0)"></button></td>
+                <td><button id="r0c1" onclick="placeTile(0, 1)"></button></td>
+                <td><button id="r0c2" onclick="placeTile(0, 2)"></button></td>
+            </tr>
+            <tr>
+                <td><button id="r1c0" onclick="placeTile(1, 0)"></button></td>
+                <td><button id="r1c1" onclick="placeTile(1, 1)"></button></td>
+                <td><button id="r1c2" onclick="placeTile(1, 2)"></button></td>
+            </tr>
+            <tr>
+                <td><button id="r2c0" onclick="placeTile(2, 0)"></button></td>
+                <td><button id="r2c1" onclick="placeTile(2, 1)"></button></td>
+                <td><button id="r2c2" onclick="placeTile(2, 2)"></button></td>
+            </tr>
+        </tbody>
+    </table><br/>
+    <button id="reset" style="background-color: red;" onclick="resetGame()">Reset</button>
+
+    <script>
+        // initialization
+        let board = []; // each cell in board
+        for (let r=0; r<3; r++) {
+            for (let c=0; c<3; c++) {
+                board.push(document.getElementById(`r${r}c${c}`));
+            }
+        }
+        let turn = "X";
+
+        // method to be called when players decide to clear the board
+        function resetGame() {
+            board.forEach(element => {
+                element.innerText = "";
+            });
+            turn = "X";
+            document.getElementById("title").innerHTML = `Player <b id="playerTurn">${turn}</b>'s turn!`;
+        }
+
+        // getting a tile's fill
+        function getFill(row, column) {
+            return board[row*3+column].innerText;
+        }
+
+        // check if there's a winner (returns empty string if none)
+        function checkWinner() {
+            // row check
+            if (getFill(0,0) === getFill(0,1) && getFill(0,0) === getFill(0,2)) {
+                    return getFill(0,0);
+                }
+                if (getFill(1,0) === getFill(1,1) && getFill(1,0) === getFill(1,2)) {
+                    return getFill(1,0);
+                }
+                if (getFill(2,0) === getFill(2,1) && getFill(2,0) === getFill(2,2)) {
+                    return getFill(2,0);
+                }
+
+                // column check
+                if (getFill(0,0) === getFill(1,0) && getFill(0,0) === getFill(2,0)) {
+                    return getFill(0,0);
+                }
+                if (getFill(0,1) === getFill(1,1) && getFill(0,1) === getFill(2,1)) {
+                    return getFill(0,1);
+                }
+                if (getFill(0,2) === getFill(1,2) && getFill(0,2) === getFill(2,2)) {
+                    return getFill(0,2);
+                }
+
+                // diagonal check
+                if (getFill(0,0) === getFill(1,1) && getFill(0,0) === getFill(2,2)) {
+                    return getFill(0,0);
+                }
+                // diagonal check
+                if (getFill(0,2) === getFill(1,1) && getFill(0,2) === getFill(2,0)) {
+                    return getFill(0,2);
+                }
+
+                return ""; // no winner
+        }
+
+        // filling a tile on the board
+        function fillTile(row, column, player) {
+            let c = board[row*3+column];
+            if (c.innerText !== "") {return false;} // unsuccessful
+            
+            c.innerText = player;
+            return true; // successful
+        }
+
+        // method to be called when player makes a move
+        function placeTile(row, column) {
+            // checking is the move valid
+            if (!fillTile(row, column, turn)) {
+                return;
+            }
+
+            // checking for winner
+            if (checkWinner() !== "") {
+                document.getElementById("title").innerHTML = `Player <b>${turn}</b> won!`;
+                return;
+            }
+
+            // continuing
+            if (turn === "X") {turn = "Y"} else {turn = "X"}
+            document.getElementById("playerTurn").innerText = turn;
+        }
+    </script>
+</body>
+</html>

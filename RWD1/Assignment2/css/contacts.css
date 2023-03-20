@@ -1,0 +1,109 @@
+/* Coded by Andrei Ghiriti */
+
+.form-div {
+  margin: auto;
+  width:100%;
+}
+
+.form-div h3 {
+  text-align: center;
+}
+
+form .button_active {
+  margin: auto;
+  width: 100px;
+}
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  margin: auto;
+  width: 100%;
+  padding: 10px; 
+}
+  
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  display:flex;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align-last:auto;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+body{
+  background-image:url(../images/background.jpg);
+   background-repeat: no-repeat ; 
+   background-size:100% 240% ;
+}
+
+.fdiv
+{
+  backdrop-filter: blur(5px);
+}
+.hstyle
+{
+  font-size:30px;
+  border:4px solid black;
+  border-radius: 15px;
+  background-color:white;
+}
+.frm
+{
+  border:3px solid black;
+}
+
+label{
+  background-color:grey;
+  font-size:20px;
+  border:4px solid black;
+}
+
+img
+{
+  visibility:hidden;
+}
+
+.hiddn
+{
+  color:yellow;
+   margin-left:65px;
+    margin-top:100px;
+    font-size:15px;
+}
+
+.cntr
+{
+  margin: auto;
+  width: 60%;
+  border: 3px solid grey;
+  padding: 10px;
+}
+
+.fdiv2
+{
+ 
+  margin: auto;
+  width: 60%;
+  border: 3px solid grey;
+  padding: 10px;
+}
+
+.fdiv2{
+  margin-top:40px;
+}
+.ppl{
+
+ margin-left:46%;
+}

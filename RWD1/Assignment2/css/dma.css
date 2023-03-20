@@ -1,0 +1,16 @@
+/* Coded by Darius Piros */
+body{background-color:rebeccapurple; margin-left: 0%;}
+#container{background-color:red; margin-left: 20%;}
+#container{
+  position: relative;
+  width: 60%;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: black;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all 2s ease;
+}
+#container:hover{
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}

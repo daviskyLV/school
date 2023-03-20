@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Coded by Andrei Ghiriti-->
+<head>
+    <meta charset="utf-8">
+    <title>viatest</title>
+    <link rel="shortcut icon" href="images/VIA_WEB_IKON_X_21x21.svg">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="topbar">
+    <table class="darkTable">
+      <tr>
+        <td class="via-nav-logo">
+          <a href="index.html">
+          <img class="via-nav-logo" src="images/via-logo-200px.png" alt="via logo"/>
+          </a>
+        </td>
+        <td><a class="nav-button" href="index.html">HOME</a></td>
+        <td><a class="nav-button" href="sep1-page.html">SEP1</a></td>
+        <td><a class="nav-button" href="dma-page.html">DMA</a></td>
+        <td><a class="nav-button" href="sdj-page.html">SDJ</a></td>
+        <td><a class="nav-button" href="rwd-page.html">RWD</a></td>
+        <td><a class="nav-button selected" href="contacts-page.html">CONTACTS</a></td>
+      </tr>
+    </table>
+  </div>
+       
+  <div class="form-div">
+    <h3 class="hstyle fdiv2"><b>Contact Form</b></h3>
+    
+    <form action="/action_page.php" class="frm cntr fdiv">
+      <label for="fname"><b>First</b></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+      <p></p>
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+      <p></p>
+      <label for="country"><b>Country</b></label>
+      
+      <select id="country" name="country">
+        <option value="romania">Romania</option>
+        <option value="ungaria">Hungary</option>
+        <option value="bulgaria">Bulgaria</option>
+        <option value="ucraina">Ukraine</option>
+        <option value="moldova">Moldova</option>
+      </select>
+      <p></p>
+      <label for="subject"><b>Subject</b></label>
+      <textarea id="subject" name="subject" placeholder="Write your questions here..." style="min-width: 20%; width: 30%;"></textarea>
+
+      <center><input type="submit" class="button_active" value="Send"></center>
+    </form>
+  </div>
+
+
+  <div class="tooltip1">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="ppl">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="92TZKHPM5**">
+      <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal – The safer, easier way to pay online.">
+    </form>
+  </div>
+
+  <div class="blk">
+    <a href="https://open.spotify.com/playlist/1UGnvfviwRiXH1m83qSHvv?si=d5ca609d1fc2472b" class="fa fa-spotify"></a>
+    <a href="https://www.facebook.com/VIAUniversityCollegeInternational/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/viauniversitycollege/?hl=en" class="fa fa-instagram"></a>
+  </div>
+</body>
+</html>

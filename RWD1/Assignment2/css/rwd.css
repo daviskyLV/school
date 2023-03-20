@@ -1,0 +1,61 @@
+/* Coded by Mikkel Hansen */
+.article-thumbnail {
+    width: 300px;
+    height:auto;
+    float:left;
+    margin-right: 24px;
+}
+
+.article-thumbnail.right {
+    float: right;
+    margin: initial;
+    margin-top: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article {
+    overflow: hidden;
+    clear:left;
+    width: 800px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.article-content {
+    text-align: justify;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.article-content h2 {
+    text-align: initial;
+}
+
+.article-content ul {
+    text-align: left;
+}
+
+@media screen and (max-width: 900px ) {
+    .article {
+        max-width: 90%;
+        transform: initial;
+        margin: auto;
+    }
+
+    .article-thumbnail, .article-thumbnail.right {
+        width: auto;
+        height: 200px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        float: none;
+    }
+
+    .article-content {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+}
