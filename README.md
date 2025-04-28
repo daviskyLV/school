@@ -8,5 +8,8 @@ I only had a few assignments saved on my computer, so nothing much.
 ## Responsive Web Design 2 (RWD2)
 Fourth semester course focusing more on JavaScript, most notably on ReactJS, as well as JSX and TypeScript.
 
+## Web Development 3 (WEB3)
+Seventh semester course focusing on web development frameworks including ReactJS, NextJS and Vue.
+
 ## Algorithms & Data Structures 1 (ADS1)
 Fourth semester course focusing on algorithms used in real world, how they work and how is the data structured (binary trees, arrays, etc.).
